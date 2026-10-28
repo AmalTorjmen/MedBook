@@ -1,10 +1,12 @@
 import { ConfigService } from '@nestjs/config';
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
+import { Cabinet } from '../entities/cabinet.entity';
+import { Disponibilite } from '../entities/disponibilite.entity';
+import { Medecin } from '../entities/medecin.entity';
+import { Patient } from '../entities/patient.entity';
+import { RendezVous } from '../entities/rendez-vous.entity';
+import { Specialite } from '../entities/specialite.entity';
 
-/**
- * Connexion MySQL (XAMPP). `synchronize` est désactivé : le schéma est
- * géré par database/schema.sql (colonne générée + index unique).
- */
 export function databaseConfig(config: ConfigService): TypeOrmModuleOptions {
   return {
     type: 'mysql',
@@ -13,7 +15,7 @@ export function databaseConfig(config: ConfigService): TypeOrmModuleOptions {
     username: config.get<string>('DB_USER', 'root'),
     password: config.get<string>('DB_PASSWORD', ''),
     database: config.get<string>('DB_NAME', 'medbook'),
-    autoLoadEntities: true,
+    entities: [Specialite, Medecin, Cabinet, Patient, Disponibilite, RendezVous],
     synchronize: false,
     timezone: 'local',
   };
