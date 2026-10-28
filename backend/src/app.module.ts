@@ -3,7 +3,9 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { databaseConfig } from './config/database.config';
 import { DisponibilitesModule } from './disponibilites/disponibilites.module';
+import { NotificationsModule } from './notifications/notifications.module';
 import { PatientsModule } from './patients/patients.module';
+import { RendezVousModule } from './rendez-vous/rendez-vous.module';
 
 @Module({
   imports: [
@@ -11,7 +13,8 @@ import { PatientsModule } from './patients/patients.module';
     TypeOrmModule.forRootAsync({ inject: [ConfigService], useFactory: databaseConfig }),
     PatientsModule,
     DisponibilitesModule,
-    // Chaque UC ajoute ici son module (UC1, UC2, ...)
+    NotificationsModule,
+    RendezVousModule,
   ],
 })
 export class AppModule {}
