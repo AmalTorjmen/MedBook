@@ -64,9 +64,17 @@ Test de concurrence (API lancée) : `node scripts/test-concurrence.js 1 10` → 
 ## Tests
 
 ```bash
-npm test          # unitaires : service UC2 + notifications
-npm run test:e2e  # HTTP : validation, garde, codes de retour (sans base)
+npm test             # tests unitaires et d’intégration
+npm run test:integration  # tests HTTP UC1 sans base de données
 ```
+
+`test/recherche.service.spec.ts` couvre UC1 A1–A3 et vérifie que l’erreur technique
+UC1 A4 remonte depuis le service. Le contrat de réponse proposant explicitement
+au patient de réessayer reste en attente. Les scénarios UC2 sont déclarés `todo`
+dans Jest : leurs composants ne sont pas présents dans `src/`.
+Les tests HTTP de `test/integration/recherche.integration.spec.ts` exercent le
+contrôleur, le service, le garde d’authentification et les réponses HTTP UC1 ;
+les dépôts sont simulés, donc aucune base de données n’est nécessaire.
 
 ## Notification (acteur secondaire)
 

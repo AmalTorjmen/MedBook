@@ -1,0 +1,21 @@
+{
+  "name": "medbook",
+  "version": "1.0.0",
+  "description": "> Projet MedBook – TP Processus unifiés et approches agiles (INSAT, RT4/1) > Branches : `feature/uc1-recherche-medecin-backend` et `feature/uc1-recherche-medecin-frontend`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmalTorjmen/MedBook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AmalTorjmen/MedBook/issues"
+  },
+  "homepage": "https://github.com/AmalTorjmen/MedBook#readme"
+}
