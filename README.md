@@ -80,6 +80,5 @@ Projet réalisé dans le cadre du TP1 (Processus unifié et 2TUP) :
 
 ## Documentation
 
-- Diagrammes PlantUML : `docs/uml/`
 - Fiches UC : `docs/`
 - Exigences fonctionnelles et techniques et cycle en Y : `docs/`
