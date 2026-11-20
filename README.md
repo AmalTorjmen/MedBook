@@ -72,7 +72,7 @@ medbook/
 
 ## État d'avancement
 
-Projet réalisé dans le cadre du TP1 (Processus unifié) et du TP2 (2TUP) :
+Projet réalisé dans le cadre du TP1 (Processus unifié et 2TUP) :
 
 - Inception et Élaboration terminées : vision, acteurs, diagramme de cas d'utilisation,
   fiches UC, priorisation, architecture de base exécutable, UC1 et UC2 réalisés.
