@@ -1,9 +1,5 @@
 # MedBook – Plateforme de prise de rendez-vous médicaux
 
-Projet réalisé dans le cadre de la matière **Processus Unifiés et Approches Agiles**
-(INSAT – Filière RT, groupe RT4/1, année universitaire 2026–2027).
-Enseignante : Mme Hajer Taktak.
-
 **Équipe :** Abdelkader Mohamed Louay, Besrour Nour, Bouzouita Baya, Torjmane Amal, Smadhi Nour.
 
 ## Vision
